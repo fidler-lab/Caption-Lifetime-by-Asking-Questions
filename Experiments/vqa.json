@@ -1,0 +1,33 @@
+
+{
+
+  "run_name": "vqa",
+  "exp_dir": "/h/shenkev/Projects/CVPR-code-release/",
+  "img_dir": "/scratch/gobi1/shenkev/Data/coco/images/",
+  "result_folder": "Results/vqa/",
+
+  "train_file": "Data/annotation/vqa_train.p",
+  "val_file": "Data/annotation/vqa_val.p",
+
+  "lr": 0.001,
+  "batch_size": 256,
+  "max_epochs": 25,
+  "grad_clip": false,
+  "max_clip": 5.0,
+  "q_max_sentence_len": 14,
+  "c_max_sentence_len": 16,
+  "multi_answer": true,
+
+  "checkpoint_every_epoch": false,
+  "visualize_every": 50,
+  "print_every": 40,
+
+  "image_channels": 2048,
+  "image_feature_size": 14,
+  "att_hidden_size": 512,
+  "rnn_size": 512,
+  "rnn_layers": 1,
+  "dropout": 0.5,
+  "word_embedding_size": 300
+
+}

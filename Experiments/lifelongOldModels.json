@@ -1,0 +1,90 @@
+{
+
+  "seed": 42,
+  "model": "QuestionAskingTrainer",
+  "stanfordnlp_dir": "Dependencies/stanford-corenlp-full-2017-06-09",
+
+  "run_name": "myrunLegacyModsDatalr1",
+  "exp_dir": "/h/shenkev/Projects/CVPR-code-release/",
+  "img_dir": "/scratch/gobi1/shenkev/Data/coco/images/",
+  "result_folder": "Results/lifelong/",
+
+  "warmup_file": "Data/annotation/train_split_0.p",
+  "train_files": "Data/annotation/old10_1.p,Data/annotation/old10_2.p,Data/annotation/old10_3.p",
+  "val_file": "Data/annotation/cap_val.p",
+  "eval_file": "Data/annotation/eval_val.p",
+  "cached_tokens": "Data/annotation/coco-words-idxs.p",
+
+  "vqa_path": "mods/vqa_start.pth",
+  "cap_path": "mods/cap_start.pth",
+  "quegen_path": "mods/qgen_start.pth",
+
+  "H": 0.7,
+  "lamda": 0.8,
+  "k": 6,
+
+  "c_lr": 0.0002,
+  "d_lr": 0.00001,
+  "batch_size": 20,
+  "cap_epochs": 18,
+  "epochs_per_chunk": 4,
+  "pos_alpha": 0.5,
+  "grad_clip": false,
+  "max_clip": 5.0,
+  "c_max_sentence_len": 16,
+  "q_max_sentence_len": 14,
+
+  "checkpoint_every_epoch": false,
+  "val_print_every": 50,
+  "print_every": 400,
+  "coco_annotation_file": "Dependencies/coco-caption/annotations/captions_val2014.json",
+  "beam_size": 1,
+  "eval_greedy": true,
+
+  "reinit_cap_weights": true,
+  "weight_captions": true,
+  "cap_greedy": true,
+  "q_greedy": true,
+  "cap_eval": false,
+  "quegen_eval": false,
+  "temperature": 0.2,
+  "dm_temperature": 1.0,
+  "question_asking_threshold": 0,
+  "ask_penalty": 0,
+
+  "image_channels": 2048,
+  "image_feature_size": 14,
+  "att_hidden_size": 512,
+  "rnn_size": 512,
+  "rnn_layers": 1,
+  "dropout": 0.5,
+  "use_dropout": true,
+  "word_embedding_size": 512,
+  "pos_emb_size": 50,
+
+  "c_rnn_size": 512,
+  "dm_emb_size": 512,
+  "dm_rnn_size": 256,
+  "dm_cnn_size": 512,
+  "use_caption_hidden": true,
+
+
+  "update_lr": true,
+  "learning_rate_decay_start": 0,
+  "learning_rate_decay_every": 3,
+  "learning_rate_decay_rate": 0.8,
+
+  "c_scheduled_sampling": true,
+  "c_scheduled_sampling_start": 0,
+  "c_scheduled_sampling_increase_every": 5,
+  "c_scheduled_sampling_increase_prob": 0.05,
+  "c_scheduled_sampling_max_prob": 0.25,
+
+  "p_scheduled_sampling": true,
+  "p_scheduled_sampling_start": 0,
+  "p_scheduled_sampling_increase_every": 3,
+  "p_scheduled_sampling_initial_value": 0.2,
+  "p_scheduled_sampling_increase_prob": 0.05,
+  "p_scheduled_sampling_max_prob": 0.70
+
+}

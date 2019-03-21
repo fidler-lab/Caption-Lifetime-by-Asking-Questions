@@ -1,0 +1,53 @@
+
+{
+
+  "run_name": "test",
+  "exp_dir": "/h/shenkev/Projects/CVPR-code-release/",
+  "img_dir": "/scratch/gobi1/shenkev/Data/coco/images/",
+  "result_folder": "Results/question/",
+
+  "train_word_file": "Data/annotation/qgenmatch_64.p",
+  "train_pos_file": "Data/annotation/qgenmatch_64.p",
+  "val_file": "Data/annotation/qgenmatch_64.p",
+
+  "vqa_path": "Results/vqa/myrun/checkpoints/myrun_best.pth",
+  "cap_path": "Results/caption/warmup2/checkpoints/warmup2_best.pth",
+
+  "lr": 0.0002,
+  "batch_size": 20,
+  "max_epochs": 30,
+  "grad_clip": false,
+  "max_clip": 5.0,
+  "q_max_sentence_len": 14,
+  "c_max_sentence_len": 16,
+  "cap_eval": false,
+  "use_caption_hidden": true,
+  "use_position_encoding": true,
+
+  "checkpoint_every_epoch": false,
+  "visualize_every": 10,
+  "print_every": 400,
+
+  "image_channels": 2048,
+  "image_feature_size": 14,
+  "att_hidden_size": 512,
+  "rnn_size": 512,
+  "rnn_layers": 1,
+  "cap_rnn_size": 256,
+  "cap_hidden_size": 512,
+  "dropout": 0.5,
+  "word_embedding_size": 512,
+  "pos_emb_size": 50,
+
+  "update_lr": true,
+  "learning_rate_decay_start": 0,
+  "learning_rate_decay_every": 3,
+  "learning_rate_decay_rate": 0.8,
+
+  "scheduled_sampling": true,
+  "scheduled_sampling_start": 0,
+  "scheduled_sampling_increase_every": 5,
+  "scheduled_sampling_increase_prob": 0.05,
+  "scheduled_sampling_max_prob": 0.25
+
+}

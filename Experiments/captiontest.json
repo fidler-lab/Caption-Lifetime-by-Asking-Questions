@@ -1,0 +1,56 @@
+{
+
+  "run_name": "test",
+  "exp_dir": "/h/shenkev/Projects/CVPR-code-release/",
+  "img_dir": "/scratch/gobi1/shenkev/Data/coco/images/",
+  "result_folder": "Results/caption/",
+
+  "train_file": "Data/annotation/cap_64_train.p",
+  "val_file": "Data/annotation/cap_64_train.p",
+  "eval_file": "Data/annotation/eval_val.p",
+  "cached_tokens": "Data/annotation/coco-64-words-idxs.p",
+
+  "lr": 0.0002,
+  "batch_size": 20,
+  "max_epochs": 1,
+  "pos_alpha": 0.5,
+  "grad_clip": false,
+  "max_clip": 5.0,
+  "max_sentence_len": 16,
+
+  "checkpoint_every_epoch": false,
+  "visualize_every": 5,
+  "print_every": 2,
+  "coco_annotation_file": "Dependencies/coco-caption/annotations/captions_val2014.json",
+  "beam_size": 1,
+  "eval_greedy": true,
+
+  "image_channels": 2048,
+  "image_feature_size": 14,
+  "att_hidden_size": 512,
+  "rnn_size": 512,
+  "rnn_layers": 1,
+  "dropout": 0.5,
+  "word_embedding_size": 512,
+  "pos_emb_size": 50,
+
+  "update_lr": true,
+  "learning_rate_decay_start": 0,
+  "learning_rate_decay_every": 3,
+  "learning_rate_decay_rate": 0.8,
+
+  "c_scheduled_sampling": true,
+  "c_scheduled_sampling_start": 0,
+  "c_scheduled_sampling_increase_every": 5,
+  "c_scheduled_sampling_increase_prob": 0.05,
+  "c_scheduled_sampling_max_prob": 0.25,
+
+  "p_scheduled_sampling": true,
+  "p_scheduled_sampling_start": 0,
+  "p_scheduled_sampling_increase_every": 3,
+  "p_scheduled_sampling_initial_value": 0.2,
+  "p_scheduled_sampling_increase_prob": 0.05,
+  "p_scheduled_sampling_max_prob": 0.70,
+
+  "k": 6
+}
