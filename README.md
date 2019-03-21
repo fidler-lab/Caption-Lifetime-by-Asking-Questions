@@ -5,7 +5,18 @@
 2. [Training](#Training)
 
 # Environment Setup
-All the code has been run and tested on Python 2.7.15 (coco-caption requires 2.7), Pytorch 1.0.0, CUDA 9.0, TITAN X/Xp and GTX 1080Ti GPUs.
+All the code has been run and tested on:
+
+- Python 2.7.15 (coco-caption requires 2.7)
+- Pytorch 1.0.0
+- CUDA 9.0
+- TITAN X/Xp and GTX 1080Ti GPUs
+
+First clone the repository:
+
+```
+git clone https://github.com/shenkev/Caption-Images-through-a-Lifetime-by-Asking-Questions.git
+```
 
 - Go into the downloaded code directory
 - Add the project to PYTHONPATH
