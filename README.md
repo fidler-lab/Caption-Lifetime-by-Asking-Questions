@@ -1,4 +1,12 @@
-# CVPR-code-release
+# Captioning by Asking
+This is the official PyTorch implementation for Learning to Caption Images through a Lifetime by Asking Questions. For technical details, please refer to:
+
+**Learning to Caption Images through a Lifetime by Asking Questions**  
+[Kevin Shen](#), [Amlan Kar](http:///www.cs.toronto.edu/~amlan/), [Sanja Fidler](http://www.cs.toronto.edu/~fidler/)        
+NeurIPS 2018, VIGIL Workshop      
+**[[Paper](https://arxiv.org/abs/1812.00235)] [[Demo](http://aidemos.cs.toronto.edu/lbaq/)]**  
+
+<img src = "Docs/intro.jpg" width="100%"/>
 
 # Contents
 1. [Environment Setup](#environment-setup)
