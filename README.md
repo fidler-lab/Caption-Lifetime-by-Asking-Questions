@@ -38,6 +38,8 @@ Run demo.py, this will run inference on the file cat.png. Feel feel to use your 
 python demo.py
 ```
 
+# Training setup
+
 ## 1. Python dependencies and Stanford NLP
 ```
 chmod +x setup.sh
