@@ -25,6 +25,18 @@ git clone https://github.com/shenkev/Caption-Images-through-a-Lifetime-by-Asking
 cd <path_to_downloaded_directory>
 export PYTHONPATH=$PWD
 ```
+# Inference
+
+- skip the setup and instead:
+  - See section "Download pretrained modules" and follow instructions
+  - Download pretrained resnet model from [here](https://drive.google.com/open?id=1vrU-5DsJEHG75EWPMF43VvbwHcwoYbU-) and place in Utils/preprocess/checkpoint
+
+
+Run demo.py, this will run inference on the file cat.png. Feel feel to use your own image and update the path to file in demo.py.
+
+```
+python demo.py
+```
 
 ## 1. Python dependencies and Stanford NLP
 ```
