@@ -3,6 +3,7 @@ This is the official PyTorch implementation for Learning to Caption Images throu
 
 **Learning to Caption Images through a Lifetime by Asking Questions**  
 [Kevin Shen](#), [Amlan Kar](http:///www.cs.toronto.edu/~amlan/), [Sanja Fidler](http://www.cs.toronto.edu/~fidler/)        
+ICCV 2019  
 NeurIPS 2018, VIGIL Workshop      
 **[[Paper](https://arxiv.org/abs/1812.00235)] [[Demo](http://aidemos.cs.toronto.edu/lbaq/)]**  
 
